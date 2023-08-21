@@ -40,6 +40,10 @@ a {
     background-color: white;
 }
 
+.bg-blue {
+    background-color: #1259c3
+}
+
 .bg-none {
     background: none;
 }
@@ -50,6 +54,10 @@ a {
 
 .text-green {
     color: #39b54a;
+}
+
+.text-white {
+    color: #ffffff;
 }
 
 .s-1 {
@@ -89,6 +97,14 @@ a {
     font-size: 24px;
 }
 
+.t-style-1 {
+    font-weight: bold;
+}
+
+.vw-50 {
+    width: 50vw;
+}
+
 .vw-90 {
     width: 90vw;
 }
@@ -120,6 +136,9 @@ a {
     margin-right: 15px;
 }
 
+.mt-1 {
+    margin-top: 10px;
+}
 
 .b-1 {
     border-style: solid;
@@ -161,6 +180,11 @@ a {
 .w-100 {
     width: 100%;
 }
+
+.w-350 {
+    width: 350px;
+}
+
 .h-50 {
     height: 50px;
 
@@ -200,8 +224,17 @@ a {
     padding-right: 40px;
 }
 
+.pl-3 {
+    padding-left: 3px;
+}
+
 .pb-40 {
     padding-bottom: 40px;
+}
+
+.px-70 {
+    padding-left: 70px;
+    padding-right: 70px;
 }
  
 .product-delivery-icon {
@@ -218,6 +251,19 @@ a {
     top: -15px;
 }
 
+.product-delivery-icon:hover {
+    transform: rotate(270deg);
+    transition-duration: 1s;
+}
+
+.footer-icon:hover {
+    color: #0022AA;
+}
+
+.footer-icon {
+    color: #1259c3;
+}
+
 .product-desc-box {
     position: relative;
 }
@@ -229,6 +275,15 @@ a {
 .f-wrap {
     flex-wrap: wrap;
 }
+
+.f-nwrap {
+    flex-wrap: nowrap;
+}
+
+.f-dir-row {
+    flex-direction: row;
+}
+    
 
 .al-center {
     align-items: center;
@@ -251,6 +306,15 @@ a {
     position: absolute;
 }
 
+main form button:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+header form button:hover {
+    cursor: pointer;
+}
+
 
 @media (max-width: 460px) {
     .mdm-w-20 {
@@ -261,16 +325,6 @@ a {
 
 /* tablet */
 @media (min-width: 750px ) {
-    .md-product-shadow {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .md-hidden {
-        display: none;
-    }
-
-    .element-visibility {
-        display: block;
-    }
     .md-d-flex {
         display: flex;
     }
@@ -297,19 +351,37 @@ a {
     .md-text-right {
         text-align: right;
     }
-
-    .product:hover .md-hidden{
+    .md-hidden {
+        display: none;
+    }
+    .element-visibility {
         display: block;
     }
+    .md-mr-10 {
+        margin-right: 10px;
+    }
 
+    .md-txt-just {
+        text-align: justify;
+    }
+    .md-w-317 {
+        width: 340px;
+    }
 }
-
 /* desktop */
 
 @media  (min-width: 1280px) {
     .md-w-22 {
         width: 22%;
     }
-    
+    .element-visibility {
+        display: block;
+    }
+    .product:hover .md-hidden{
+        display: block;
+    }
 
+    .product:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
