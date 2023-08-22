@@ -18,7 +18,7 @@ app.get("/login.html",function (req,res){
     res.sendFile(path.join(__dirname, "views/login.html"))
 });
 
-const PORT = 3020;
+const PORT = process.env.PORT || 3020;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
